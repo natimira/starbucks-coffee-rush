@@ -36,7 +36,7 @@ img{display:block;max-width:100%}h1,h2,h3,p{margin:0}
 .pin-top{top:-4px;transform:translate(-50%,-100%)}.pin-bottom{bottom:-4px;transform:translate(-50%,100%)}
 .sb-hot:hover .sb-pin,.sb-hot:focus-visible .sb-pin{background:#fff}
 @keyframes sb-bob{50%{margin-top:-3px}}
-.sb-board{display:flex;flex-direction:column;align-items:center;gap:1px;padding-top:9px;color:#e8efe9;font-size:15px;text-align:center}
+.sb-board{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;height:100%;box-sizing:border-box;padding:6px 0;color:#e8efe9;font-size:15px;text-align:center}
 .sb-board b{margin-bottom:1px;color:var(--sb-gold);font-size:19px}.sb-board i{font-style:normal}.sb-board em{margin-top:3px;padding:0 8px;background:var(--sb-gold);color:var(--sb-ink);font-style:normal;font-size:14px;letter-spacing:.08em}
 .sb-fame{display:flex;flex-direction:column;gap:8px;height:100%;padding:8px 8px 0;text-align:left}
 .sb-fame>b{display:block;height:30px;line-height:30px;text-align:center;color:var(--sb-ink);font-size:20px;letter-spacing:.06em}
@@ -135,7 +135,7 @@ img{display:block;max-width:100%}h1,h2,h3,p{margin:0}
 
 /* ---------- Tarjetas y cuenta regresiva dentro del café ---------- */
 .sb-overlay{position:absolute;inset:0;z-index:12;display:grid;place-items:center;background:rgb(16 35 29 / .55);animation:sb-fade .25s steps(3)}
-.sb-overlay.light{background:rgb(16 35 29 / .25)}
+.sb-overlay.light{background:rgb(16 35 29 / .72)}
 .sb-card-center{display:flex;gap:18px;width:660px;max-height:490px;padding:18px 22px;border:4px solid var(--sb-ink);border-radius:8px;background:var(--sb-cream);box-shadow:inset 0 0 0 3px var(--sb-gold),0 8px 0 rgb(0 0 0 / .45);animation:sb-pop .3s steps(3)}
 .sb-card-portrait{flex:none;width:96px;text-align:center;font-size:16px;color:var(--sb-green)}
 .sb-card-portrait img{width:84px;height:135px;image-rendering:pixelated}
@@ -153,7 +153,7 @@ img{display:block;max-width:100%}h1,h2,h3,p{margin:0}
 .sb-actions{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 .sb-countdown{text-align:center;color:#fff}
 .sb-countdown span{display:block;font-size:28px;letter-spacing:.2em;color:var(--sb-gold);text-shadow:0 3px 0 var(--sb-ink)}
-.sb-countdown strong{display:block;font-size:210px;font-weight:400;line-height:1;text-shadow:0 8px 0 var(--sb-ink);animation:sb-count .9s steps(6)}
+.sb-countdown strong{display:block;font-size:210px;font-weight:400;line-height:1;text-shadow:0 8px 0 var(--sb-green),0 0 0 #fff;animation:sb-count .9s steps(6)}
 @keyframes sb-count{from{transform:scale(1.7);opacity:0}}
 
 /* ---------- Entrada (inicio) ---------- */

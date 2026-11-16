@@ -14,7 +14,7 @@ export default function Hub({ profile, ranking, soundEnabled, onToggleSound, onP
     <div className={`sb-room${dimmed ? ' dimmed' : ''}`}>
       <BackLayer variant="hub" />
 
-      <Hotspot x={26} y={36} w={236} h={92} label="CÓMO JUGAR" pin="none" onClick={onHow}>
+      <Hotspot x={26} y={36} w={236} h={112} label="CÓMO JUGAR" pin="none" onClick={onHow}>
         <span className="sb-board"><b>☕ MENÚ DEL DÍA</b><i>Caramel · Iced Latte</i><i>Mocha · Strawberry Latte</i><em>▶ CÓMO JUGAR</em></span>
       </Hotspot>
 

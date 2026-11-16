@@ -67,7 +67,7 @@ export function BackLayer({ variant = 'play' }) {
     {hub ? <>
       <Sign x={290} y={36} />
       {/* pizarra de menú */}
-      <rect x="26" y="36" width="236" height="92" fill="#5b3d27" stroke={INK} strokeWidth="4" /><rect x="34" y="44" width="220" height="76" fill="#17231f" />
+      <rect x="26" y="36" width="236" height="112" fill="#5b3d27" stroke={INK} strokeWidth="4" /><rect x="34" y="44" width="220" height="96" fill="#17231f" />
       {/* muro de la fama */}
       <rect x="640" y="40" width="295" height="210" fill="#5b3d27" stroke={INK} strokeWidth="4" /><rect x="648" y="48" width="279" height="194" fill="#17231f" />
       <rect x="648" y="48" width="279" height="30" fill="#CBA258" />

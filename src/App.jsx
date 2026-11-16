@@ -103,7 +103,7 @@ export default function App() {
 
   useEffect(() => {
     if (state.screen !== 'countdown') return
-    const delay = state.countdown === 0 ? 450 : 1000
+    const delay = state.countdown === 0 ? 1100 : 1000
     const timeout = setTimeout(() => send({ type: 'COUNTDOWN_TICK' }), delay)
     return () => clearTimeout(timeout)
   }, [state.screen, state.countdown, send])
@@ -136,7 +136,7 @@ export default function App() {
     }
   }, [state.profile])
   useEffect(() => {
-    if (state.screen !== 'results') return
+    if (state.screen !== 'results' && state.screen !== 'levelComplete') return
     writeStorage('habbo-coffee-record', state.bestScore)
     if (state.profile) recordScore({ email: state.profile.email, name: state.profile.name, score: state.score, date: new Date().toISOString() })
   }, [state.screen, state.bestScore, state.score, state.profile])
